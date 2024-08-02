@@ -1,8 +1,6 @@
-.swiper-container {
+.swiperSlide {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full viewport height */
-    width: 100%; /* Full viewport width if needed */
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    height: 100vh;            
 }
-  

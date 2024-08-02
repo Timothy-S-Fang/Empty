@@ -1,30 +1,72 @@
 /* CardContainer.css */
 .card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    width: 400px;
+    background-color: #EECCE4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px;
+    overflow: hidden;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    min-height: 730.648px;
+}
+
+.card-container:hover {
+    transform: translateY(-5px);
+}
+
+.card-image-container {
     width: 100%;
+    border: 20px solid #EECCE4; /* Border around the image */
+    padding: 3px; /* Uniform padding */
+    box-sizing: border-box;
+    height: 100%;
+    object-fit: cover; /* Cover the container without distorting the aspect ratio */
+}
+
+.card-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit:cover;
+    border-radius: 10px;
 }
 
 .card-content {
-    width: 300px;
-    height: 550px; /* Flexible height */
-    background-color: #f0f0f0;
-    border-radius: 15px;
-    border: 1px solid #ccc;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    padding: 10px;
+    background-color: #989A99;
+}
+
+.card-content-other {
+    padding: 10px;
+    background-color: #EECCE4;
 }
 
 .card-title {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: bold;
+    padding:10px;
+    background-color: #CCD0E9;
+    border-radius: 10px;
+}
+
+.card-rarity {
+    padding: 8px 0;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.other-title {
+    font-size: 24px; /* Larger font size for the title */
+    font-weight: bold; /* Bold font weight */
+    text-align: center; /* Ensure text is centered */
+}
+
+.card-description {
+    margin: 0; /* No margin to fit tightly within the card */
+    background-color: #EECCE4; /* Lighter text color for contrast */
+    font-size: 16px; /* Standard text size */
+    font-family: Arial, sans-serif; /* Font family */
+    line-height: 1.5; /* Line height for better readability */
 }

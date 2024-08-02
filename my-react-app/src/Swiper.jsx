@@ -3,21 +3,22 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import CardContainer from './CardContainer';
 
 // Import Swiper styles
-import 'swiper/css';
+import "swiper/css"
+import './Swiper.css';
 
-export default () => {
+function CardPack({cards}) {
   return (
     <Swiper
       spaceBetween={50}
       slidesPerView={1}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
     >
-      <SwiperSlide><CardContainer children={"Hello"} title={"Legendary"}/></SwiperSlide>
-      <SwiperSlide><CardContainer children={"Hello"} title={"Legendary"}/></SwiperSlide>
-      <SwiperSlide><CardContainer children={"Hello"} title={"Legendary"}/></SwiperSlide>
-      <SwiperSlide><CardContainer children={"Hello"} title={"Legendary"}/></SwiperSlide>
-      
+      {cards.map((card, index) => (
+        <SwiperSlide key={index} className='swiperSlide'>
+          <CardContainer card={card} />
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };
+
+export default CardPack;
