@@ -1,17 +1,16 @@
 import CardPack from "./Swiper";
-import sing from "./images/sing.jpg"
+import ubereats from "./images/ubereats.png"
 
 const cards = [
     {
-      image: sing,
-      title: 'Card 1',
-      rarity: 'Legendary',
+      image: ubereats,
+      title: 'ONE UBER EATS DATE!',
+      rarity: 'SUPER RARE',
       description: 'This is the description for card 1.',
       otherSide: {
-        image: sing,
-        title: 'Flipped Side',
+        title: 'FREE UBER EATS!!!',
         rarity: 'Common',
-        description: 'Lorem ipsum odor amet, consectetuer adipiscing elit. Integer sodales augue vel mattis laoreet. Porttitor et commodo adipiscing magna molestie integer amet dictumst. Suscipit ad arcu; blandit vulputate cras litora. Ligula aliquet elementum tristique nisl orci conubia. Eget eget ultricies volutpat venenatis ac himenaeos ipsum efficitur. Facilisi leo hac aptent libero porttitor cras ullamcorper est mi. Vestibulum tellus felis ultrices fusce quis rutrum. Pharetra mauris imperdiet arcu efficitur elementum Lorem ipsum odor amet, consectetuer adipiscing elit. Integer sodales augue vel mattis laoreet. Porttitor et commodo adipiscing magna molestie integer amet dictumst. Suscipit ad arcu; blandit vulputate cras litora. Ligula aliquet elementum tristique nisl orci conubia. Eget eget ultricies volutpat venenatis ac himenaeos ipsum efficitur. Facilisi leo hac aptent libero porttitor cras ullamcorper est mi. Vestibulum tellus felis ultrices fusce quis rutrum. Pharetra mauris imperdiet arcu efficitur elementum'
+        description: 'With this coupon broie gets to make a reasonably sized order from any restaurant she wants! Depending on broies order size, Tim may order as well so it turns into a virtual date! Some suggestions Tim has thought of for inspo are galbi tang for a hearty soup, Nachies cuz broie loves nachies, and tteokbeoki with spam! Disclaimer: Delivery service need not be Uber Eats. '
       }
     },
     {
@@ -20,7 +19,6 @@ const cards = [
       rarity: 'Rare',
       description: 'This is the description for card 2.',
       otherSide: {
-        image: sing,
         title: 'Flipped Side',
         rarity: 'Common',
         description: 'This is the description for card 1.',
