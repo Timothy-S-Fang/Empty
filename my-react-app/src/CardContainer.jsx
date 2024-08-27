@@ -6,11 +6,11 @@ function getRarityColor(rarity) {
     switch (rarity) {
         case 'Common':
             return '#cfcfc4'; // Pastel Grey
-        case 'Uncommon':
+        case 'RARE':
             return '#92c47c'; // Pastel Green
-        case 'Rare':
-            return '#5dade2'; // Pastel Blue
         case 'SUPER RARE':
+            return '#5dade2'; // Pastel Blue
+        case 'EPIC':
             return '#d7bde2'; // Pastel Purple
         case 'LEGENDARY':
             return '#f7dc6f'; // Pastel Gold

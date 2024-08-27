@@ -2,5 +2,5 @@
     display: flex;
     justify-content: center;  /* Centers horizontally */
     align-items: center;      /* Centers vertically */
-    height: 65vh;     
+    width: 100% !important;
 }

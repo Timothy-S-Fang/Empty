@@ -6,7 +6,7 @@ import CardContainer from './CardContainer';
 import "swiper/css"
 import './Swiper.css';
 
-function CardPack({cards}) {
+function CardPack({ cards }) {
   return (
     <Swiper
       spaceBetween={50}
