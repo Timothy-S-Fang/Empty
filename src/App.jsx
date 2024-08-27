@@ -7,10 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/test" element={<PackOne />} />
-      </Routes>
+      <HomePage />
     </div>
   );
 }

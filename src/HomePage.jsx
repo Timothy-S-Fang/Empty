@@ -48,7 +48,6 @@ function HomePage() {
     return (
         <div className={styles.fullHeightContainer}>
             <Navbar />
-            <div>hello</div>
             <div className="col h-100" onClick={() => setOpenPack(!openPack)}>
                 <div className={styles.parentCenter}>
                     {tapCount === 0 &&
