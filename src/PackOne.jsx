@@ -22,6 +22,7 @@ import QE from './images/pictures/QE.jpg';
 import suncoast from './images/pictures/suncoast.jpg';
 import swede from './images/pictures/swede.jpg';
 import toronto from './images/pictures/toronto.jpg';
+import styles from './PackOne.module.css';
 
 
 const cards = [
@@ -259,10 +260,10 @@ const cards = [
 ];
 
 
-function PackOne() {
+function PackOne({setPackOpened}) {
   return (
     <div>
-      <CardPack cards={cards} />
+      <CardPack cards={cards} setPackOpened={setPackOpened}/>
     </div>
   )
 }

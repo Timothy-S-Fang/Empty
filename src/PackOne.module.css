@@ -1,0 +1,10 @@
+.packOneContainer {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Ensure padding is included in the height/width calculations */
+    padding-top: 6000px; /* Reset any default padding */
+    margin: 0; /* Reset any default margin */
+}

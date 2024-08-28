@@ -1,6 +1,6 @@
 import { motion, useAnimation } from "framer-motion";
-import { useState } from "react";
-import PackOne from "./PackOne"
+import { useState, useRef } from "react";
+import PackOne from "./PackOne";
 import packArtzero from "./images/packArt/packArt0.png";
 import packArtone from "./images/packArt/packArt1.png";
 import packArttwo from "./images/packArt/packArt2.png";
@@ -22,6 +22,8 @@ function HomePage() {
     const [tapCount, setTapCount] = useState(0);
     const controls = useAnimation();
 
+    const modalRef = useRef();
+
     const maxTaps = 5;  // Number of taps required to open the pack
 
     const handleTap = () => {
@@ -38,11 +40,17 @@ function HomePage() {
             setPackOpened(true);
         }
     };
- 
+
     const handleClose = () => {
         setOpenPack(false);
         setPackOpened(false);
         setTapCount(0); // Reset tap count
+    };
+
+    const handleOverlayClick = (e) => {
+        if (modalRef.current && !modalRef.current.contains(e.target)) {
+            handleClose();
+        }
     };
 
     return (
@@ -66,6 +74,7 @@ function HomePage() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
+                    onClick={handleOverlayClick}
                 >
                     <motion.div
                         className={styles.packShakeContainer}
@@ -90,12 +99,13 @@ function HomePage() {
 
             {packOpened && (
                 <motion.div
-                    className={styles.packOpeningOverlay}
+                    className={styles.packOpeningOverlay2}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
+                    onClick={handleOverlayClick}
                 >
-                    <div className={styles.packContent}>
+                    <div className={styles.packContent} ref={modalRef}>
                         <PackOne />
                         <button onClick={handleClose}>Close</button>
                     </div>

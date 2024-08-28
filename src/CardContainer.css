@@ -40,10 +40,12 @@
 .card-content-other {
     padding: 10px;
     background-color: #EECCE4;
+    max-height: 550px; /* Set a maximum height for the content area */
+    overflow-y: auto; /* Add vertical scrolling if content overflows */
 }
 
 .card-title {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     padding:10px;
     background-color: #CCD0E9;
@@ -63,9 +65,10 @@
 }
 
 .card-description {
-    margin: 0; /* No margin to fit tightly within the card */
-    background-color: #EECCE4; /* Lighter text color for contrast */
-    font-size: 16px; /* Standard text size */
-    font-family: Arial, sans-serif; /* Font family */
-    line-height: 1.5; /* Line height for better readability */
+    margin: 0;
+    background-color: #EECCE4;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    overflow-y: auto; /* Ensure the description can scroll */
 }

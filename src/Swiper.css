@@ -1,6 +1,10 @@
 .swiperSlide {
     display: flex;
-    justify-content: center;  /* Centers horizontally */
-    align-items: center;      /* Centers vertically */
-    width: 100% !important;
+    justify-content: center;  /* Centers the card horizontally */
+    align-items: center;      /* Centers the card vertically */
+    height: 100vh;            /* Ensure the slide takes the full viewport height */
+    width: 100% !important;   /* Ensure the slide takes the full width */
+    box-sizing: border-box;   /* Include padding/borders in height/width calculations */
+    padding: 0;
+    margin: 0;
 }
