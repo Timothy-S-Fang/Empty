@@ -166,7 +166,7 @@ const cards = [
     otherSide: {
       title: 'Eiffy Towie ',
       rarity: 'RARE',
-      description: 'OKAY this is my actual favourite photo of all time! hehehe eeing the eiffel tower with bro and those nights in paris walking around the city was very romantic :)). It felt like we escaped the hectic business of London and it was just me and bro in Paris! Bro passed out at like 8pm though and then slap me at 6am when i didn\'t wake up!',
+      description: 'OKAY this is my actual favourite photo of all time! hehehe seeing the eiffel tower with bro and those nights in paris walking around the city was very romantic :)). It felt like we escaped the hectic business of London and it was just me and bro in Paris! Bro passed out at like 8pm though and then slap me at 6am when i didn\'t wake up!',
     }
   },
   {
